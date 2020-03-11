@@ -1,0 +1,85 @@
+
+public class Principal {
+
+	public static void main(String[] args) {
+			
+		Quadrado1 PrimeiroQuadrado = new Quadrado1();
+		
+		PrimeiroQuadrado.base = 12;
+		PrimeiroQuadrado.altura = 6;
+		
+		System.out.println("A �rea do quadrado �: "+PrimeiroQuadrado.calcular(12*6));
+		
+		Quadrado1 SegundoQuadrado = new Quadrado1();
+		
+		SegundoQuadrado.base = 20;
+		SegundoQuadrado.altura = 15;
+		
+		System.out.println("A �rea do quadrado �: "+SegundoQuadrado.calcular(20*15));
+	}
+
+}
+
+
+
+public class Quadrado1 {
+
+	double base;
+	double altura;
+	double area;
+	
+	 double calcular(double area){
+	
+		return area = base*altura;
+	 }
+}
+
+_________________________________________________________________________
+
+public class Principal {
+	public static void main(String[] args) {
+		
+		Funcionario Pedro = new Funcionario();
+		Pedro.salariobruto = 5000;
+		Pedro.nome = "Pedro";
+		Pedro.imposto = 1.5;
+		Pedro.salarioliquido= 5000-7.5;
+		Pedro.aumento= 150;
+		System.out.println("\n Nome: "+Pedro.nome);
+		System.out.println("O sal�rio liquido �: "+ Pedro.salarioliquido);
+		System.out.println("O aumento do salario foi de : "+Pedro.aumento);
+		
+		Funcionario Vagner = new Funcionario();
+		Vagner.salariobruto = 10000;
+		Vagner.nome = "Vagner";
+		Vagner.imposto = 14;
+		Vagner.salarioliquido= 10000-17;
+		Vagner.aumento= 500;
+		System.out.println("\n Nome: "+Vagner.nome);
+		System.out.println("O salario liquido �: "+ Vagner.salarioliquido);
+		System.out.println("O aumento do salario foi de : "+Vagner.aumento);
+	}
+
+}
+
+
+import java.util.Scanner;
+public class Funcionario {
+	Scanner in = new Scanner(System.in);
+	
+	String nome;
+	double salariobruto;
+	double salarioliquido;
+	double imposto;
+	double aumento;
+	
+	double Calcularliquido(double salarioliquido){
+		
+		return salarioliquido=salariobruto-imposto;
+	}
+	double aumentasalario(){
+		
+		return aumento = salariobruto + aumento;
+		
+	}
+}
